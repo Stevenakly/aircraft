@@ -16,6 +16,7 @@ namespace Aircraft.Models
         public string FechaLlegada { get; set; }
         public string FechaSalida { get; set; }
         public virtual Avion AvionID { get; set; }
+        public virtual Vuelo Estado{ set; get; }
         public virtual ICollection<Reservacion> Reservaciones { get; set; }
     }
 }
